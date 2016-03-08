@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+   <html>
+       <head>
+           <meta http-equiv='Content-Type', content='text/html; charset=UTF-8' />
+           <title>Your Website</title>
+           <!--css-->
+           <link rel='stylesheet' type='text/css' href='css/redactor.css'>
+             <link rel='stylesheet' type='text/css' href='css/codemirror.css'>
+            <link rel='stylesheet' type='text/css' href='css/redactor-iframe.css'>
+             <link rel='stylesheet' type='text/css' href='css/app.css'>
+           
+           <!--vendor-->
+           <script type="text/javascript" src="vendor/codemirror.js"></script>
+           <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+           <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js'></script>
+           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js'></script>
+           
+           <script type='text/javascript' src='vendor/ui-codemirror.js'></script>
+           <script type='text/javascript' src='vendor/redactor.js'></script>
+           <script type='text/javascript' src='vendor/angular-redactor.js'></script>
+           
+           <!--app-->
+           <script type='text/javascript' src="app.config.js"></script>
+           <script type='text/javascript' src="app.route.js"></script>
+           <!--compoents-->
+           <script type='text/javascript' src="module_builder/addModule.ctrl.js"></script>
+       </head>
+   <body ng-app="moduleBuild">
+       	<div ui-view></div> 
+   </body>
+</html>

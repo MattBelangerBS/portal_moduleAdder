@@ -1,0 +1,28 @@
+<h1>Module Builder</h1>
+
+<div class="panel panel-default">
+    <label>Name
+        <input type="text" ng-model="ctrl.name">
+    </label>
+    <div class="panel-body">
+        <div class="form-group">
+            <textarea ng-model="ctrl.content" redactor cols="30" rows="10"></textarea>
+        </div>
+        <br/>
+        <p>{{ctrl.content}}</p>
+    </div>
+
+
+    <h4>Test Code</h4>
+    <div class="borders"ng-model="ctrl.codeTest" ui-codemirror ></div>
+    <h4>Starter Code</h4>
+    <div class="borders"ng-model="ctrl.codeStarter" ui-codemirror ></div>
+
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="ctrl.submitContent()">Submit content</button>
+    </div>
+        
+    <div class="jsonOutput">
+        {{ctrl.jsonOutput}}
+    </div>
+</div>
